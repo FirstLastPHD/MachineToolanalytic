@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>CrunchifySpringMVCTutorial</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+      <servlet>
+        <servlet-name>crunchify</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>crunchify</servlet-name>
+        <url-pattern>/device.jsp</url-pattern>
+        <url-pattern>/spectrogram.jsp</url-pattern>
+        <url-pattern>/signal.jsp</url-pattern>
+        <url-pattern>/frekwAnalyze.jsp</url-pattern>
+        <url-pattern>/energyConsuption.jsp</url-pattern>
+        <url-pattern>/vibrodiagnostic.jsp</url-pattern>
+        <url-pattern>/index.jsp</url-pattern>
+         <url-pattern>/404.jsp</url-pattern>
+         <url-pattern>/prediction.jsp</url-pattern>
+         <url-pattern>/linRegRNN.jsp</url-pattern>
+         <url-pattern>/allNodesCSV.jsp</url-pattern>
+         <url-pattern>/singleNodeCSV.jsp</url-pattern>
+         <url-pattern>/multipleAxes.jsp</url-pattern>
+         <url-pattern>/plotAxes.jsp</url-pattern>
+         <url-pattern>/multipleAxesPCA.jsp</url-pattern>
+         <url-pattern>/multipleAxesVibro.jsp</url-pattern>
+         <url-pattern>/device.html</url-pattern>
+         <url-pattern>/spectrogram.html</url-pattern>
+          <url-pattern>/signal.html</url-pattern>
+          <url-pattern>/frekwAnalyze.html</url-pattern>
+          <url-pattern>/energyConsuption.html</url-pattern>
+           <url-pattern>/vibrodiagnostic.html</url-pattern>
+          <url-pattern>/404.html</url-pattern>
+          <url-pattern>/prediction.html</url-pattern>
+          <url-pattern>/linRegRNN.html</url-pattern>
+          <url-pattern>/allNodesCSV.html</url-pattern>
+          <url-pattern>/singleNodeCSV.html</url-pattern>
+          <url-pattern>/multipleAxes.html</url-pattern>
+          <url-pattern>/plotAxes.html</url-pattern>
+          <url-pattern>/multipleAxesPCA.html</url-pattern>
+          <url-pattern>/multipleAxesVibro.html</url-pattern>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    
+    
+  
+</web-app>
